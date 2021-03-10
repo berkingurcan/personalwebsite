@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: black;
+	background-image: url("arka.png");
+	background-size: 100%;
+	/*background-repeat: repeat; */ /*I don't need that but 2point :); */
+	box-sizing: border-box;
+
+	}
+
+
+
+nav{
+	display: flex;
+	align-items: top;
+	background-color: rgba(0,0,0,0.4);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+
+
+ul{
+	width: 100%;
+	padding: 0 0 0 225px;
+	list-style: none;
+
+	}
+
+.navlogo{
+	padding-top: 8px;
+	padding-left: 15px;
+}
+
+li {
+	float: left;
+}
+
+li a:hover{
+	color: white;
+	font-size: 25px;
+	transition: .7s;
+	text-decoration-color: #fff;
+	transform: rotate(3deg);
+	}
+
+
+li a:active{
+	text-decoration: underline;	
+}
+
+li a:visited{
+	/* no need any state */
+}
+
+li a:link{
+	color: white;
+
+}
+
+li a {
+	width: 100%;
+	display: inline-block;
+	padding: 15px 26px;
+	text-decoration: underline;
+	text-decoration-color: rgba(255,255,255,0.0);
+	font-family: 'Jura', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	transition: 0.3s linear;
+}
+
+
+.name{
+	font-family: 'Jura', sans-serif;
+	font-size: 48px;
+	text-align: center;
+	padding-top: 60px;
+	color: white;
+	/*text-transform: uppercase;*/
+}
+
+.welc{
+	animation: type 3s steps(29);
+	overflow: hidden;
+	white-space: nowrap;
+	width: 29ch;
+	font-family: 'Jura', sans-serif;
+	font-size: 32px;
+	padding-left: 430px;
+	padding-top: 0px;
+	color: white;
+}
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.2);
+	height: auto;
+	width: 100vw;
+	font-family: 'Roboto Mono', monospace;
+	padding-top: 20px;
+	color: white;
+
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content span{
+	opacity: .6;
+}
+
+
+
+
+
+
+
+@keyframes type {
+	0% {
+		width: 0ch;
+
+	}
+	100% {
+		width: 29ch;
+	}
+}
+
